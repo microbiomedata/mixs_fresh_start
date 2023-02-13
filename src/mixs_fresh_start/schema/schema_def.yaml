@@ -1,0 +1,28 @@
+classes:
+  Biosample:
+    from_schema: TEMP
+    slot_usage:
+      depth:
+        range: QuantityValue
+    slots:
+    - depth
+  QuantityValue:
+    from_schema: TEMP
+    slot_usage:
+      has_raw_value: {}
+    slots:
+    - has_raw_value
+default_prefix: TEMP
+default_range: string
+id: TEMP
+imports:
+- linkml:types
+name: TEMP
+prefixes:
+  TEMP: https://example.org/TEMP/
+  linkml: https://w3id.org/linkml/
+slots:
+  depth:
+    from_schema: TEMP
+  has_raw_value:
+    from_schema: TEMP

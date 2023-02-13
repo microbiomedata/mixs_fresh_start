@@ -1,0 +1,10 @@
+type Biosample
+  {
+    depth: QuantityValue
+  }
+
+type QuantityValue
+  {
+    hasRawValue: String
+  }
+

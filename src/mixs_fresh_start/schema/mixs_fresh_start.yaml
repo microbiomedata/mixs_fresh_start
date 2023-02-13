@@ -1,0 +1,22 @@
+id: https://w3id.org/microbiomedata/mixs_fresh_start
+name: mixs_fresh_start
+title: mixs_fresh_start
+description: |-
+  copy from github
+license: MIT
+see_also:
+  - https://microbiomedata.github.io/mixs_fresh_start
+
+prefixes:
+  mixs_fresh_start: https://w3id.org/microbiomedata/mixs_fresh_start/
+  linkml: https://w3id.org/linkml/
+  biolink: https://w3id.org/biolink/
+  schema: http://schema.org/
+  PATO: http://purl.obolibrary.org/obo/PATO_
+  example: https://example.org/
+default_prefix: mixs_fresh_start
+default_range: string
+
+imports:
+  - linkml:types
+  - schema_def

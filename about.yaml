@@ -1,0 +1,6 @@
+name: mixs_fresh_start
+author: Mark Andrew Miller <mam@lbl.gov>
+description: copy from github
+source_schema_path: src/mixs_fresh_start/schema/mixs_fresh_start.yaml
+google_sheet_id: 1RlgLb5W9TVwhFP9Qh1Vqi2RqzJ4RTMxLgwQGU7DfiXw
+google_sheet_tabs: schema_def
