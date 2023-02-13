@@ -398,7 +398,7 @@
   "source_file": "mixs_fresh_start.yaml",
   "source_file_date": "2023-02-13T12:37:56",
   "source_file_size": 568,
-  "generation_date": "2023-02-13T13:18:17",
+  "generation_date": "2023-02-13T13:23:10",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/mixs_fresh_start.context.jsonld",
