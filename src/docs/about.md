@@ -1,5 +1,5 @@
 # mixs_fresh_start
 
-copy from github
+A MIxS repo that uses LinkML cookiecutter and schemasheets from the beginning
 
 
