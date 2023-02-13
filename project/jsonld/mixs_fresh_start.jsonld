@@ -8,7 +8,7 @@
   "id": "https://w3id.org/microbiomedata/mixs_fresh_start",
   "imports": [
     "linkml:types",
-    "schema_def"
+    "from_google_schema_sheets"
   ],
   "license": "MIT",
   "prefixes": [
@@ -396,14 +396,14 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "mixs_fresh_start.yaml",
-  "source_file_date": "2023-02-13T12:37:56",
-  "source_file_size": 568,
-  "generation_date": "2023-02-13T13:23:10",
+  "source_file_date": "2023-02-13T13:27:39",
+  "source_file_size": 583,
+  "generation_date": "2023-02-13T13:28:56",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/mixs_fresh_start.context.jsonld",
     "https://w3id.org/linkml/types.context.jsonld",
-    "schema_def.context.jsonld",
+    "from_google_schema_sheets.context.jsonld",
     {
       "@base": "https://w3id.org/microbiomedata/mixs_fresh_start/"
     }
