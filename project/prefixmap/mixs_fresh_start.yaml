@@ -1,8 +1,24 @@
 {
    "PATO": "http://purl.obolibrary.org/obo/PATO_",
+   "TEMP": "https://example.org/TEMP/",
    "biolink": "https://w3id.org/biolink/",
    "example": "https://example.org/",
    "linkml": "https://w3id.org/linkml/",
    "mixs_fresh_start": "https://w3id.org/microbiomedata/mixs_fresh_start/",
-   "schema": "http://schema.org/"
+   "schema": "http://schema.org/",
+   "Biosample": {
+      "@id": "TEMP:Biosample"
+   },
+   "Checklists": {
+      "@id": "TEMP:Checklists"
+   },
+   "Extension": {
+      "@id": "TEMP:Extension"
+   },
+   "Package": {
+      "@id": "TEMP:Package"
+   },
+   "QuantityValue": {
+      "@id": "TEMP:QuantityValue"
+   }
 }

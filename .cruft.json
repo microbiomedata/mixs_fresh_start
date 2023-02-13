@@ -8,7 +8,7 @@
       "__project_slug": "mixs_fresh_start",
       "github_org": "microbiomedata",
       "__source_path": "src/mixs_fresh_start/schema/mixs_fresh_start.yaml",
-      "project_description": "copy from github",
+      "project_description": "A MIxS repo that uses LinkML cookiecutter and schemasheets from the beginning",
       "full_name": "Mark Andrew Miller",
       "email": "mam@lbl.gov",
       "__author": "Mark Andrew Miller <mam@lbl.gov>",
@@ -17,8 +17,8 @@
       "create_python_classes": "Yes",
       "use_schemasheets": "Yes",
       "google_sheet_id": "1RlgLb5W9TVwhFP9Qh1Vqi2RqzJ4RTMxLgwQGU7DfiXw",
-      "google_sheet_tabs": "schema_def",
-      "__google_sheet_module": "schema_def",
+      "google_sheet_tabs": "schema_def prefixes class_defs slot_defs slot_assignments_and_usages",
+      "__google_sheet_module": "from_google_schema_sheets",
       "github_token_for_pypi_deployment": "PYPI_PASSWORD",
       "_template": "https://github.com/linkml/linkml-project-cookiecutter"
     }

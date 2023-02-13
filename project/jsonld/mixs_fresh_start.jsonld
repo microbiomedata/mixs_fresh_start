@@ -260,11 +260,145 @@
       "@type": "TypeDefinition"
     }
   ],
+  "slots": [
+    {
+      "name": "depth",
+      "definition_uri": "https://example.org/TEMP/depth",
+      "description": "the distance between some reference point, like average sea level, and the spot from which a sampe ws obtained",
+      "from_schema": "TEMP",
+      "slot_uri": "https://example.org/TEMP/depth",
+      "owner": "Biosample",
+      "domain_of": [
+        "Biosample"
+      ],
+      "range": "QuantityValue",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_raw_value",
+      "definition_uri": "https://example.org/TEMP/has_raw_value",
+      "description": "the input provoded by a user",
+      "from_schema": "TEMP",
+      "slot_uri": "https://example.org/TEMP/has_raw_value",
+      "owner": "QuantityValue",
+      "domain_of": [
+        "QuantityValue"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Biosample_depth",
+      "definition_uri": "https://example.org/TEMP/depth",
+      "description": "the distance between some reference point, like average sea level, and the spot from which a sampe ws obtained",
+      "from_schema": "TEMP",
+      "is_a": "depth",
+      "domain": "Biosample",
+      "slot_uri": "https://example.org/TEMP/depth",
+      "alias": "depth",
+      "owner": "Biosample",
+      "domain_of": [
+        "Biosample"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "depth",
+      "range": "QuantityValue",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "QuantityValue_has_raw_value",
+      "definition_uri": "https://example.org/TEMP/has_raw_value",
+      "description": "the input provoded by a user",
+      "from_schema": "TEMP",
+      "is_a": "has_raw_value",
+      "domain": "QuantityValue",
+      "slot_uri": "https://example.org/TEMP/has_raw_value",
+      "alias": "has_raw_value",
+      "owner": "QuantityValue",
+      "domain_of": [
+        "QuantityValue"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "has_raw_value",
+      "range": "string",
+      "@type": "SlotDefinition"
+    }
+  ],
+  "classes": [
+    {
+      "name": "Biosample",
+      "definition_uri": "https://example.org/TEMP/Biosample",
+      "description": "An implied root of all MIxS classes (Packages? EnvironmentalPackages?,) Possibly abstract. Never actually mentioned in any MIxS literature.",
+      "from_schema": "TEMP",
+      "abstract": true,
+      "slots": [
+        "Biosample_depth"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Biosample",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "QuantityValue",
+      "definition_uri": "https://example.org/TEMP/QuantityValue",
+      "description": "The NMDC-preferred structured representation of magnitude/unit pairs",
+      "from_schema": "TEMP",
+      "is_a": "Biosample",
+      "slots": [
+        "Biosample_depth",
+        "QuantityValue_has_raw_value"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/QuantityValue",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Package",
+      "definition_uri": "https://example.org/TEMP/Package",
+      "description": "Most recently defined as the combination of a Checklist and an Extension",
+      "from_schema": "TEMP",
+      "is_a": "Biosample",
+      "slots": [
+        "Biosample_depth"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Package",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Checklists",
+      "definition_uri": "https://example.org/TEMP/Checklists",
+      "description": "A representation of required terms, according to the type of sequencing to be performed and the types of organisms expected to be found",
+      "from_schema": "TEMP",
+      "is_a": "Biosample",
+      "slots": [
+        "Biosample_depth"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Checklists",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Extension",
+      "definition_uri": "https://example.org/TEMP/Extension",
+      "description": "Most recently defined as a representation of the environment from which a Biosample could be obtained, and the corresponding relevant metadata terms.",
+      "from_schema": "TEMP",
+      "is_a": "Biosample",
+      "slots": [
+        "Biosample_depth"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://example.org/TEMP/Extension",
+      "@type": "ClassDefinition"
+    }
+  ],
   "metamodel_version": "1.7.0",
   "source_file": "mixs_fresh_start.yaml",
   "source_file_date": "2023-02-13T12:37:56",
   "source_file_size": 568,
-  "generation_date": "2023-02-13T12:58:25",
+  "generation_date": "2023-02-13T13:18:17",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/mixs_fresh_start.context.jsonld",

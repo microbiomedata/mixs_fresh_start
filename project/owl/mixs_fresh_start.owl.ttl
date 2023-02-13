@@ -1,14 +1,28 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix linkml: <https://w3id.org/linkml/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-linkml:ClassDefinition a owl:Class ;
-    rdfs:label "class_definition" .
+<https://example.org/TEMP/Checklists> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Checklists" ;
+    rdfs:subClassOf <https://example.org/TEMP/Biosample> ;
+    skos:definition "A representation of required terms, according to the type of sequencing to be performed and the types of organisms expected to be found" .
 
-linkml:SlotDefinition a owl:Class ;
-    rdfs:label "slot_definition" .
+<https://example.org/TEMP/Extension> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Extension" ;
+    rdfs:subClassOf <https://example.org/TEMP/Biosample> ;
+    skos:definition "Most recently defined as a representation of the environment from which a Biosample could be obtained, and the corresponding relevant metadata terms." .
+
+<https://example.org/TEMP/Package> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Package" ;
+    rdfs:subClassOf <https://example.org/TEMP/Biosample> ;
+    skos:definition "Most recently defined as the combination of a Checklist and an Extension" .
 
 linkml:SubsetDefinition a owl:Class ;
     rdfs:label "subset_definition" .
@@ -21,13 +35,51 @@ linkml:topValue a owl:DatatypeProperty ;
 
 <https://w3id.org/microbiomedata/mixs_fresh_start> a owl:Ontology ;
     rdfs:label "mixs_fresh_start" ;
+    IAO:0000700 <https://example.org/TEMP/Biosample> ;
     dcterms:license "MIT" ;
     dcterms:title "mixs_fresh_start" ;
     rdfs:seeAlso "https://microbiomedata.github.io/mixs_fresh_start" ;
-    linkml:generation_date "2023-02-13T12:58:27" ;
+    linkml:generation_date "2023-02-13T13:18:22" ;
     linkml:metamodel_version "1.7.0" ;
     linkml:source_file "mixs_fresh_start.yaml" ;
     linkml:source_file_date "2023-02-13T12:37:56" ;
     linkml:source_file_size 568 .
+
+<https://example.org/TEMP/depth> a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "depth" ;
+    rdfs:range <https://example.org/TEMP/QuantityValue> ;
+    skos:definition "the distance between some reference point, like average sea level, and the spot from which a sampe ws obtained" .
+
+<https://example.org/TEMP/has_raw_value> a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "has_raw_value" ;
+    rdfs:range linkml:String ;
+    skos:definition "the input provoded by a user" .
+
+<https://example.org/TEMP/QuantityValue> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "QuantityValue" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty <https://example.org/TEMP/has_raw_value> ],
+        <https://example.org/TEMP/Biosample> ;
+    skos:definition "The NMDC-preferred structured representation of magnitude/unit pairs" .
+
+linkml:SlotDefinition a owl:Class ;
+    rdfs:label "slot_definition" .
+
+<https://example.org/TEMP/Biosample> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Biosample" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://example.org/TEMP/QuantityValue> ;
+            owl:onProperty <https://example.org/TEMP/depth> ] ;
+    skos:definition "An implied root of all MIxS classes (Packages? EnvironmentalPackages?,) Possibly abstract. Never actually mentioned in any MIxS literature." .
+
+linkml:ClassDefinition a owl:Class ;
+    rdfs:label "class_definition" .
 
 

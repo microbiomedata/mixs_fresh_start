@@ -1,0 +1,21 @@
+// A representation of required terms, according to the type of sequencing to be performed and the types of organisms expected to be found
+message Checklists
+ {
+  quantityValue depth = 0
+ }
+// Most recently defined as a representation of the environment from which a Biosample could be obtained, and the corresponding relevant metadata terms.
+message Extension
+ {
+  quantityValue depth = 0
+ }
+// Most recently defined as the combination of a Checklist and an Extension
+message Package
+ {
+  quantityValue depth = 0
+ }
+// The NMDC-preferred structured representation of magnitude/unit pairs
+message QuantityValue
+ {
+  quantityValue depth = 0
+  string hasRawValue = 0
+ }

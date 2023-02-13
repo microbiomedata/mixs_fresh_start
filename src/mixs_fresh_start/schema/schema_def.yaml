@@ -1,9 +1,64 @@
-default_prefix: TEMP
-default_range: string
+name: mixs_fresh_start
 id: TEMP
 imports:
 - linkml:types
-name: mixs_fresh_start
 prefixes:
-  TEMP: https://example.org/TEMP/
-  linkml: https://w3id.org/linkml/
+  linkml:
+    prefix_prefix: linkml
+    prefix_reference: https://w3id.org/linkml/
+  TEMP:
+    prefix_prefix: TEMP
+    prefix_reference: https://example.org/TEMP/
+default_prefix: TEMP
+default_range: string
+slots:
+  depth:
+    name: depth
+    description: the distance between some reference point, like average sea level,
+      and the spot from which a sampe ws obtained
+    from_schema: TEMP
+    range: QuantityValue
+  has_raw_value:
+    name: has_raw_value
+    description: the input provoded by a user
+    from_schema: TEMP
+classes:
+  Biosample:
+    name: Biosample
+    description: An implied root of all MIxS classes (Packages? EnvironmentalPackages?,)
+      Possibly abstract. Never actually mentioned in any MIxS literature.
+    from_schema: TEMP
+    abstract: true
+    slots:
+    - depth
+    slot_usage:
+      depth:
+        name: depth
+  QuantityValue:
+    name: QuantityValue
+    description: The NMDC-preferred structured representation of magnitude/unit pairs
+    from_schema: TEMP
+    is_a: Biosample
+    slots:
+    - has_raw_value
+    slot_usage:
+      has_raw_value:
+        name: has_raw_value
+  Package:
+    name: Package
+    description: Most recently defined as the combination of a Checklist and an Extension
+    from_schema: TEMP
+    is_a: Biosample
+  Checklists:
+    name: Checklists
+    description: A representation of required terms, according to the type of sequencing
+      to be performed and the types of organisms expected to be found
+    from_schema: TEMP
+    is_a: Biosample
+  Extension:
+    name: Extension
+    description: Most recently defined as a representation of the environment from
+      which a Biosample could be obtained, and the corresponding relevant metadata
+      terms.
+    from_schema: TEMP
+    is_a: Biosample

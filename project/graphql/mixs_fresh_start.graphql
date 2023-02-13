@@ -1,0 +1,26 @@
+interface Biosample
+  {
+    depth: QuantityValue
+  }
+
+type Checklists
+  {
+    depth: QuantityValue
+  }
+
+type Extension
+  {
+    depth: QuantityValue
+  }
+
+type Package
+  {
+    depth: QuantityValue
+  }
+
+type QuantityValue
+  {
+    depth: QuantityValue
+    hasRawValue: String
+  }
+

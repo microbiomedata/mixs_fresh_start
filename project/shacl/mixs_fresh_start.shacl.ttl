@@ -1,1 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/TEMP/Biosample> a sh:NodeShape ;
+    sh:closed false ;
+    sh:description "An implied root of all MIxS classes (Packages? EnvironmentalPackages?,) Possibly abstract. Never actually mentioned in any MIxS literature." ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class <https://example.org/TEMP/QuantityValue> ;
+            sh:description "the distance between some reference point, like average sea level, and the spot from which a sampe ws obtained" ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNode ;
+            sh:order 0 ;
+            sh:path <https://example.org/TEMP/depth> ] ;
+    sh:targetClass <https://example.org/TEMP/Biosample> .
+
+<https://example.org/TEMP/Checklists> a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "A representation of required terms, according to the type of sequencing to be performed and the types of organisms expected to be found" ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class <https://example.org/TEMP/QuantityValue> ;
+            sh:description "the distance between some reference point, like average sea level, and the spot from which a sampe ws obtained" ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNode ;
+            sh:order 0 ;
+            sh:path <https://example.org/TEMP/depth> ] ;
+    sh:targetClass <https://example.org/TEMP/Checklists> .
+
+<https://example.org/TEMP/Extension> a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "Most recently defined as a representation of the environment from which a Biosample could be obtained, and the corresponding relevant metadata terms." ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class <https://example.org/TEMP/QuantityValue> ;
+            sh:description "the distance between some reference point, like average sea level, and the spot from which a sampe ws obtained" ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNode ;
+            sh:order 0 ;
+            sh:path <https://example.org/TEMP/depth> ] ;
+    sh:targetClass <https://example.org/TEMP/Extension> .
+
+<https://example.org/TEMP/Package> a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "Most recently defined as the combination of a Checklist and an Extension" ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class <https://example.org/TEMP/QuantityValue> ;
+            sh:description "the distance between some reference point, like average sea level, and the spot from which a sampe ws obtained" ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNode ;
+            sh:order 0 ;
+            sh:path <https://example.org/TEMP/depth> ] ;
+    sh:targetClass <https://example.org/TEMP/Package> .
+
+<https://example.org/TEMP/QuantityValue> a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "The NMDC-preferred structured representation of magnitude/unit pairs" ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class <https://example.org/TEMP/QuantityValue> ;
+            sh:description "the distance between some reference point, like average sea level, and the spot from which a sampe ws obtained" ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNode ;
+            sh:order 1 ;
+            sh:path <https://example.org/TEMP/depth> ],
+        [ sh:description "the input provoded by a user" ;
+            sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path <https://example.org/TEMP/has_raw_value> ] ;
+    sh:targetClass <https://example.org/TEMP/QuantityValue> .
 

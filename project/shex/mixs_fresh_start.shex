@@ -1,6 +1,8 @@
 BASE <https://w3id.org/microbiomedata/mixs_fresh_start/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX linkml: <https://w3id.org/linkml/>
+PREFIX TEMP: <https://example.org/TEMP/>
 
 
 linkml:String xsd:string
@@ -34,5 +36,48 @@ linkml:Ncname xsd:string
 linkml:Objectidentifier IRI
 
 linkml:Nodeidentifier NONLITERAL
+
+TEMP:Biosample  (
+    @TEMP:Checklists OR @TEMP:Extension OR @TEMP:Package OR @TEMP:QuantityValue
+)
+
+TEMP:Biosample_struct {
+    (  $TEMP:Biosample_tes TEMP:depth @TEMP:QuantityValue ? ;
+       rdf:type [ TEMP:Biosample ] ?
+    )
+}
+
+TEMP:Checklists CLOSED {
+    (  $TEMP:Checklists_tes (  &TEMP:Biosample_tes ;
+          rdf:type [ TEMP:Biosample ] ?
+       ) ;
+       rdf:type [ TEMP:Checklists ] ?
+    )
+}
+
+TEMP:Extension CLOSED {
+    (  $TEMP:Extension_tes (  &TEMP:Biosample_tes ;
+          rdf:type [ TEMP:Biosample ] ?
+       ) ;
+       rdf:type [ TEMP:Extension ] ?
+    )
+}
+
+TEMP:Package CLOSED {
+    (  $TEMP:Package_tes (  &TEMP:Biosample_tes ;
+          rdf:type [ TEMP:Biosample ] ?
+       ) ;
+       rdf:type [ TEMP:Package ] ?
+    )
+}
+
+TEMP:QuantityValue CLOSED {
+    (  $TEMP:QuantityValue_tes (  &TEMP:Biosample_tes ;
+          rdf:type [ TEMP:Biosample ] ? ;
+          TEMP:has_raw_value @linkml:String ?
+       ) ;
+       rdf:type [ TEMP:QuantityValue ] ?
+    )
+}
 
 

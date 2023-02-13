@@ -1,4 +1,58 @@
 {
+    "$defs": {
+        "Checklists": {
+            "additionalProperties": false,
+            "description": "A representation of required terms, according to the type of sequencing to be performed and the types of organisms expected to be found",
+            "properties": {
+                "depth": {
+                    "$ref": "#/$defs/QuantityValue",
+                    "description": "the distance between some reference point, like average sea level, and the spot from which a sampe ws obtained"
+                }
+            },
+            "title": "Checklists",
+            "type": "object"
+        },
+        "Extension": {
+            "additionalProperties": false,
+            "description": "Most recently defined as a representation of the environment from which a Biosample could be obtained, and the corresponding relevant metadata terms.",
+            "properties": {
+                "depth": {
+                    "$ref": "#/$defs/QuantityValue",
+                    "description": "the distance between some reference point, like average sea level, and the spot from which a sampe ws obtained"
+                }
+            },
+            "title": "Extension",
+            "type": "object"
+        },
+        "Package": {
+            "additionalProperties": false,
+            "description": "Most recently defined as the combination of a Checklist and an Extension",
+            "properties": {
+                "depth": {
+                    "$ref": "#/$defs/QuantityValue",
+                    "description": "the distance between some reference point, like average sea level, and the spot from which a sampe ws obtained"
+                }
+            },
+            "title": "Package",
+            "type": "object"
+        },
+        "QuantityValue": {
+            "additionalProperties": false,
+            "description": "The NMDC-preferred structured representation of magnitude/unit pairs",
+            "properties": {
+                "depth": {
+                    "$ref": "#/$defs/QuantityValue",
+                    "description": "the distance between some reference point, like average sea level, and the spot from which a sampe ws obtained"
+                },
+                "has_raw_value": {
+                    "description": "the input provoded by a user",
+                    "type": "string"
+                }
+            },
+            "title": "QuantityValue",
+            "type": "object"
+        }
+    },
     "$id": "https://w3id.org/microbiomedata/mixs_fresh_start",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "additionalProperties": true,
