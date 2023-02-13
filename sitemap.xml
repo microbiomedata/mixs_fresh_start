@@ -6,31 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microbiomedata.github.io/mixs_fresh_start/Biosample/</loc>
-         <lastmod>2023-02-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microbiomedata.github.io/mixs_fresh_start/QuantityValue/</loc>
-         <lastmod>2023-02-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microbiomedata.github.io/mixs_fresh_start/TEMP/</loc>
-         <lastmod>2023-02-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microbiomedata.github.io/mixs_fresh_start/depth/</loc>
-         <lastmod>2023-02-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microbiomedata.github.io/mixs_fresh_start/has_raw_value/</loc>
-         <lastmod>2023-02-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://microbiomedata.github.io/mixs_fresh_start/mixs_fresh_start/</loc>
          <lastmod>2023-02-13</lastmod>
          <changefreq>daily</changefreq>
