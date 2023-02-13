@@ -57,15 +57,18 @@ install:
 # ---
 #
 # check we are up to date
+
+# MAM 2023-02-13 wrapped cruft invocations in poetry run
+
 check: cruft-check
 cruft-check:
-	cruft check
+	$(RUN) cruft check
 cruft-diff:
-	cruft diff
+	$(RUN) cruft diff
 
 update: update-template update-linkml
 update-template:
-	cruft update
+	$(RUN) cruft update
 
 # todo: consider pinning to template
 update-linkml:

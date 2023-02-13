@@ -1,28 +1,4 @@
 {
-    "$defs": {
-        "Biosample": {
-            "additionalProperties": false,
-            "description": "",
-            "properties": {
-                "depth": {
-                    "$ref": "#/$defs/QuantityValue"
-                }
-            },
-            "title": "Biosample",
-            "type": "object"
-        },
-        "QuantityValue": {
-            "additionalProperties": false,
-            "description": "",
-            "properties": {
-                "has_raw_value": {
-                    "type": "string"
-                }
-            },
-            "title": "QuantityValue",
-            "type": "object"
-        }
-    },
     "$id": "https://w3id.org/microbiomedata/mixs_fresh_start",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "additionalProperties": true,
