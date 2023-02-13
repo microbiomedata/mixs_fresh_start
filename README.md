@@ -29,3 +29,11 @@ Use the `make` command to generate project artefacts:
 ## Credits
 
 this project was made with [linkml-project-cookiecutter](https://github.com/linkml/linkml-project-cookiecutter)
+
+## Where can we get MIxS specifications?
+- Google Sheets (these aren't locked, so somebody could have altered them)
+- Excel representation, recommend by Chris Hunter. Is there a single (or two) Excel sheets that correspond to the two Google Sheets? I see one sheet for each package/extension and one foreach checklist
+- Chris Mungall's automated conversion, bvased on this script: XXX
+
+
+### Advantages and disadvantages
