@@ -19,4 +19,4 @@ default_range: string
 
 imports:
   - linkml:types
-  - schema_def
+  - from_google_schema_sheets
