@@ -163,3 +163,14 @@ clean:
 	rm -fr docs/*
 
 include project.Makefile
+
+assets/MIxS_6_term_updates-MIxS6_packages-Final_clean.tsv:
+	curl -L "https://docs.google.com/spreadsheets/d/1QDeeUcDqXes69Y2RjU2aWgOpCVWo5OVsBX9MKmMqi_o/export?gid=750683809&format=tsv" > $@
+
+assets/MIxS_6_term_updates-MIxS6_Core-Final_clean.tsv:
+	curl -L "https://docs.google.com/spreadsheets/d/1QDeeUcDqXes69Y2RjU2aWgOpCVWo5OVsBX9MKmMqi_o/export?gid=178015749&format=tsv" > $@
+
+xxx: assets/MIxS_6_term_updates-MIxS6_packages-Final_clean.tsv assets/MIxS_6_term_updates-MIxS6_Core-Final_clean.tsv
+	$(RUN)  python src/mixs_fresh_start/datamodel/gs_extractions_and_comparisons.py \
+		--package_file $(word 1,$^) \
+		--core_file $(word 2,$^)
