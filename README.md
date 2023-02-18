@@ -35,9 +35,8 @@ this project was made with [linkml-project-cookiecutter](https://github.com/link
 - Google Sheets (these aren't locked, so somebody could have altered them)
     - [MIxS 6 term updates, MIxS6 packages - Final_clean tab](https://docs.google.com/spreadsheets/d/1QDeeUcDqXes69Y2RjU2aWgOpCVWo5OVsBX9MKmMqi_o/edit#gid=750683809)
     - [MIxS 6 term updates, MIxS6 Core- Final_clean](https://docs.google.com/spreadsheets/d/1QDeeUcDqXes69Y2RjU2aWgOpCVWo5OVsBX9MKmMqi_o/edit#gid=178015749)
-- Excel representation, recommend by Chris Hunter. Is there a single (or two) Excel sheets that correspond to the two
-  Google Sheets? I see one sheet for each package/extension and one foreach checklist
-    - https://github.com/GenomicsStandardsConsortium/mixs/tree/main/mixs/excel
+- Excel representation, recommend by Chris Hunter.
+    - https://github.com/GenomicsStandardsConsortium/mixs/raw/main/mixs/excel/mixs_v6.xlsx
 - Chris
   Mungall's [automated LinkML conversion](https://github.com/GenomicsStandardsConsortium/mixs/tree/main/model/schema),
   based on https://github.com/GenomicsStandardsConsortium/mixs/blob/main/gsctools/mixs_converter.py
