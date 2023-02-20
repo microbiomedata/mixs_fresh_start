@@ -1,6 +1,8 @@
 # mixs_fresh_start
 
-copy from github
+This project requires the following system dependencies in addition to the Python libraties in pyproject.toml
+- https://github.com/theZiz/aha
+- https://github.com/aswinkarthik/csvdiff
 
 ## Website
 
