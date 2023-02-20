@@ -11,7 +11,8 @@ pre_modifications: comprehensive_cleanup extract_all_sheets assets/pre_col_diff_
 assets/mixs_combined.tsv \
 assets/report_id_item_multi_pairings.out assets/report_id_scn_multi_pairings.out assets/report_sc_item_multi_pairings.out
 
-post_modifications: assets/mixs_uniform_terms.tsv assets/mixs_combined_diff_no_752.html
+post_modifications: assets/report_id_item_multi_pairings.out assets/report_id_scn_multi_pairings.out assets/report_sc_item_multi_pairings.out \
+assets/mixs_uniform_terms.tsv assets/mixs_combined_diff_no_752.html
 
 comprehensive_cleanup: tsvs_cleanup management_cleanup diff_cleanup
 	rm -rf \
