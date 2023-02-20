@@ -1,0 +1,25 @@
+Structured comment name value: chimera_check is paired with multiple values in Item: {'chimera check', 'chimera check software'}
+Structured comment name value: solar_irradiance is paired with multiple values in Item: {'mean seasonal solar irradiance', 'solar irradiance'}
+Structured comment name value: nose_throat_disord is paired with multiple values in Item: {'nose/mouth/teeth/throat disorder', 'lung/nose-throat disorder'}
+Structured comment name value: samp_type is paired with multiple values in Item: {'sample type', 'sample type (host or environmental context)'}
+Structured comment name value: tot_nitro is paired with multiple values in Item: {'total nitrogen', 'total nitrogen concentration'}
+Structured comment name value: horizon_meth is paired with multiple values in Item: {'horizon method', 'soil horizon method'}
+Structured comment name value: sieving is paired with multiple values in Item: {'composite design/sieving', 'composite design/sieving (if any)'}
+Structured comment name value: store_cond is paired with multiple values in Item: {'storage conditions (fresh/frozen/other)', 'storage conditions'}
+Structured comment name value: season_temp is paired with multiple values in Item: {'mean seasonal air temperature', 'mean seasonal temperature'}
+Structured comment name value: heavy_metals_meth is paired with multiple values in Item: {'extreme_unusual_conditions', 'extreme_unusual_properties/heavy metals method'}
+Structured comment name value: samp_collect_device is paired with multiple values in Item: {'sample collection device or method', 'sample collection device'}
+Structured comment name value: food_trav_vehic is paired with multiple values in Item: {'Food shipping transportation vehicle', 'food shipping transportation vehicle'}
+Structured comment name value: lot_number is paired with multiple values in Item: {'lot_number', 'lot number'}
+Item value: sample collection device is paired with multiple values in Structured comment name: {'samp_collect_device', 'samp_collec_device'}
+Item value: sample collection method is paired with multiple values in Structured comment name: {'samp_collect_method', 'samp_collec_method', 'sample_collec_method'}
+Item value: assembly quality is paired with multiple values in Structured comment name: {'assembly_qual', 'assembly_quality'}
+Item value: relevant electronic resources is paired with multiple values in Structured comment name: {'associated resource', 'url'}
+Item value: sample storage duration is paired with multiple values in Structured comment name: {'samp_store_dur', 'samp_stor_dur'}
+Item value: sample storage location is paired with multiple values in Structured comment name: {'samp_store_loc', 'samp_stor_loc'}
+Item value: sample storage temperature is paired with multiple values in Structured comment name: {'samp_store_temp', 'samp_stor_temp'}
+Item value: host family relationship is paired with multiple values in Structured comment name: {'host_family_relation', 'host_family_relationship'}
+Item value: total carbon is paired with multiple values in Structured comment name: {'tot_car', 'tot_carb'}
+Item value: non-mineral nutrient regimen is paired with multiple values in Structured comment name: {'non_mineral_nutr_regm', 'non_min_nutr_regm'}
+Item value: history/previous land use method is paired with multiple values in Structured comment name: {'prev_land_use_meth', 'previous_land_use_meth'}
+Item value: microbial biomass method is paired with multiple values in Structured comment name: {'microbial_biomass_meth', 'micro_biomass_meth'}

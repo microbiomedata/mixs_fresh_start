@@ -2,33 +2,33 @@ MIXS ID value: MIXS:0001107 is paired with multiple values in Item: {'sample nam
 MIXS ID value: MIXS:0000018 is paired with multiple values in Item: {'depth', 'soil depth'}
 MIXS ID value: MIXS:0000002 is paired with multiple values in Item: {'sample collection device or method', 'sample collection device'}
 MIXS ID value: MIXS:0000052 is paired with multiple values in Item: {'chimera check software', 'chimera check'}
-MIXS ID value: MIXS:0000056 is paired with multiple values in Item: {'assembly quality', 'assembly software'}
-MIXS ID value: MIXS:0000058 is paired with multiple values in Item: {'assembly quality', 'assembly software'}
+MIXS ID value: MIXS:0000056 is paired with multiple values in Item: {'assembly software', 'assembly quality'}
+MIXS ID value: MIXS:0000058 is paired with multiple values in Item: {'assembly software', 'assembly quality'}
 MIXS ID value: MIXS:0000103 is paired with multiple values in Item: {'spike-in organism count', 'organism count'}
-MIXS ID value: MIXS:0000108 is paired with multiple values in Item: {'air_PM_concen', 'air particulate matter concentration'}
+MIXS ID value: MIXS:0000108 is paired with multiple values in Item: {'air particulate matter concentration', 'air_PM_concen'}
 MIXS ID value: MIXS:0000755 is paired with multiple values in Item: {'sample storage location', 'sample transport  container'}
 MIXS ID value: MIXS:0000112 is paired with multiple values in Item: {'solar irradiance', 'mean seasonal solar irradiance'}
 MIXS ID value: MIXS:0000998 is paired with multiple values in Item: {'sample type (host or environmental context)', 'sample type'}
 MIXS ID value: MIXS:0000530 is paired with multiple values in Item: {'total nitrogen', 'total nitrogen content'}
-MIXS ID value: MIXS:0001082 is paired with multiple values in Item: {'soil horizon', 'horizon'}
+MIXS ID value: MIXS:0001082 is paired with multiple values in Item: {'horizon', 'soil horizon'}
 MIXS ID value: MIXS:0000321 is paired with multiple values in Item: {'horizon method', 'soil horizon method'}
-MIXS ID value: MIXS:0000322 is paired with multiple values in Item: {'composite design/sieving', 'composite design/sieving (if any)'}
+MIXS ID value: MIXS:0000322 is paired with multiple values in Item: {'composite design/sieving (if any)', 'composite design/sieving'}
 MIXS ID value: MIXS:0000327 is paired with multiple values in Item: {'storage conditions', 'storage conditions (fresh/frozen/other)'}
 MIXS ID value: MIXS:0000643 is paired with multiple values in Item: {'mean seasonal air temperature', 'mean seasonal temperature'}
 MIXS ID value: MIXS:0000335 is paired with multiple values in Item: {'soil texture measurement', 'texture'}
-MIXS ID value: MIXS:0000336 is paired with multiple values in Item: {'soil texture method', 'texture method'}
-MIXS ID value: MIXS:0000338 is paired with multiple values in Item: {'total nitrogen content method', 'total nitrogen method'}
-MIXS ID value: MIXS:0000343 is paired with multiple values in Item: {'extreme_unusual_properties/heavy metals method', 'extreme_unusual_conditions'}
+MIXS ID value: MIXS:0000336 is paired with multiple values in Item: {'texture method', 'soil texture method'}
+MIXS ID value: MIXS:0000338 is paired with multiple values in Item: {'total nitrogen method', 'total nitrogen content method'}
+MIXS ID value: MIXS:0000343 is paired with multiple values in Item: {'extreme_unusual_conditions', 'extreme_unusual_properties/heavy metals method'}
 MIXS ID value: MIXS:0000689 is paired with multiple values in Item: {'total phosphate', 'total phosphorous'}
-MIXS ID value: MIXS:0001184 is paired with multiple values in Item: {'food product type', 'Foodon product type'}
+MIXS ID value: MIXS:0001184 is paired with multiple values in Item: {'Foodon product type', 'food product type'}
 MIXS ID value: MIXS:0001139 is paired with multiple values in Item: {'food source', 'Food source'}
-MIXS ID value: MIXS:0001138 is paired with multiple values in Item: {'food shipping transportation vehicle', 'Food shipping transportation vehicle'}
+MIXS ID value: MIXS:0001138 is paired with multiple values in Item: {'Food shipping transportation vehicle', 'food shipping transportation vehicle'}
 MIXS ID value: MIXS:0001147 is paired with multiple values in Item: {'lot number', 'lot_number'}
-Item value: assembly quality is paired with multiple values in MIXS ID: {'MIXS:0000056', 'MIXS:0000058'}
-Item value: assembly software is paired with multiple values in MIXS ID: {'MIXS:0000056', 'MIXS:0000058'}
-Item value: host sex is paired with multiple values in MIXS ID: {'MIXS:0000811', 'MIXS:0000862'}
+Item value: assembly quality is paired with multiple values in MIXS ID: {'MIXS:0000058', 'MIXS:0000056'}
+Item value: assembly software is paired with multiple values in MIXS ID: {'MIXS:0000058', 'MIXS:0000056'}
+Item value: host sex is paired with multiple values in MIXS ID: {'MIXS:0000862', 'MIXS:0000811'}
 Item value: host body product is paired with multiple values in MIXS ID: {'MIXS:0000888', 'MIXS:0000868'}
-Item value: observed host symbionts is paired with multiple values in MIXS ID: {'MIXS:0001309', 'MIXS:0001298'}
+Item value: observed host symbionts is paired with multiple values in MIXS ID: {'MIXS:0001298', 'MIXS:0001309'}
 Item value: soil horizon is paired with multiple values in MIXS ID: {'MIXS:0001291', 'MIXS:0001082'}
-Item value: spike-in organism count is paired with multiple values in MIXS ID: {'MIXS:0001335', 'MIXS:0000103'}
-Item value: sample transport  container is paired with multiple values in MIXS ID: {'MIXS:0000755', 'MIXS:0001230'}
+Item value: spike-in organism count is paired with multiple values in MIXS ID: {'MIXS:0000103', 'MIXS:0001335'}
+Item value: sample transport  container is paired with multiple values in MIXS ID: {'MIXS:0001230', 'MIXS:0000755'}

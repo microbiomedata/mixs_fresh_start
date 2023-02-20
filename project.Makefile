@@ -9,15 +9,16 @@ SHEET_NAMES := MIxS environmental_packages
 
 pre_modifications: comprehensive_cleanup extract_all_sheets assets/pre_col_diff_report.out management_all assets/post_col_diff_report.out \
 assets/mixs_combined.tsv \
-assets/report_id_item_multi_pairings.out assets/report_id_scn_multi_pairings.out assets/report_sc_item_multi_pairings.out
+assets/report_pre_id_scn_multi_pairings.out assets/report_pre_sc_item_multi_pairings.out assets/report_pre_id_item_multi_pairings.out
 
-post_modifications: assets/report_id_item_multi_pairings.out assets/report_id_scn_multi_pairings.out assets/report_sc_item_multi_pairings.out \
-assets/mixs_uniform_terms.tsv assets/mixs_combined_diff_no_752.html
+post_modifications: assets/report_post_id_item_multi_pairings.out assets/report_post_id_scn_multi_pairings.out  assets/report_post_sc_item_multi_pairings.out \
+assets/mixs_uniform_terms.tsv assets/mixs_combined_diff_conservative.html
 
 comprehensive_cleanup: tsvs_cleanup management_cleanup diff_cleanup
 	rm -rf \
 assets/drop_then_remove_dupes.out \
-assets/mixs_combined_diff_no_752.html \
+assets/mixs_combined_conservative.tsv \
+assets/mixs_combined_diff_conservative.html \
 assets/mixs_combined_original.tsv \
 assets/mixs_conflicting_terms.tsv \
 assets/mixs_uniform_terms.tsv \
@@ -25,7 +26,12 @@ assets/post_col_diff_report.out \
 assets/pre_col_diff_report.out \
 assets/report_id_item_multi_pairings.out \
 assets/report_id_scn_multi_pairings.out \
-assets/report_sc_item_multi_pairings.out
+assets/report_post_id_item_multi_pairings.out \
+assets/report_post_id_scn_multi_pairings.out \
+assets/report_post_sc_item_multi_pairings.out \
+assets/report_pre_id_item_multi_pairings.out \
+assets/report_pre_id_scn_multi_pairings.out \
+assets/report_pre_sc_item_multi_pairings.out
 
 
 diff_cleanup:
@@ -105,19 +111,38 @@ assets/mixs_combined.tsv: assets/mixs_v6_MIxS_managed_keys.tsv assets/mixs_v6_en
 	  --column-order "MIXS ID","Structured comment name","Item","Environmental package","Section","Expected value","Value syntax","Occurrence","Preferred unit","Example","Definition" \
 	  --output-tsv $@
 
-assets/report_id_scn_multi_pairings.out: assets/mixs_combined.tsv
+assets/report_pre_id_scn_multi_pairings.out: assets/mixs_combined.tsv
 	$(RUN) find_multi_pairings \
 		--input_tsv $< \
 		--column_a "MIXS ID" \
 		--column_b "Structured comment name" | tee $@
 
-assets/report_sc_item_multi_pairings.out: assets/mixs_combined.tsv
+assets/report_pre_sc_item_multi_pairings.out: assets/mixs_combined.tsv
 	$(RUN) find_multi_pairings \
 		--input_tsv $< \
 		--column_a "Structured comment name" \
 		--column_b "Item" | tee $@
 
-assets/report_id_item_multi_pairings.out: assets/mixs_combined.tsv
+assets/report_pre_id_item_multi_pairings.out: assets/mixs_combined.tsv
+	$(RUN) find_multi_pairings \
+		--input_tsv $< \
+		--column_a "MIXS ID" \
+		--column_b "Item" | tee $@
+
+
+assets/report_post_id_scn_multi_pairings.out: assets/mixs_combined_modified.tsv
+	$(RUN) find_multi_pairings \
+		--input_tsv $< \
+		--column_a "MIXS ID" \
+		--column_b "Structured comment name" | tee $@
+
+assets/report_post_sc_item_multi_pairings.out: assets/mixs_combined_modified.tsv
+	$(RUN) find_multi_pairings \
+		--input_tsv $< \
+		--column_a "Structured comment name" \
+		--column_b "Item" | tee $@
+
+assets/report_post_id_item_multi_pairings.out: assets/mixs_combined_modified.tsv
 	$(RUN) find_multi_pairings \
 		--input_tsv $< \
 		--column_a "MIXS ID" \
@@ -152,12 +177,16 @@ assets/mixs_uniform_terms.tsv: assets/mixs_combined_modified.tsv
 		--drop-field "Section" \
 		--drop-field "Example" | tee assets/drop_then_remove_dupes.out
 
-assets/mixs_combined_no_752.tsv: assets/mixs_combined.tsv
-	grep -v "MIXS:0000752"  $< > $@
+assets/mixs_combined_conservative.tsv: assets/mixs_combined.tsv
+	grep -v "MIXS:0000752" $< | \
+	grep -v "MIXS:0000755" | \
+	grep -v "MIXS:0001230" > $@
 
-assets/mixs_combined_modified_no_752.tsv: assets/mixs_combined_modified.tsv
-	grep -v "MIXS:0000752" $< > $@
+assets/mixs_combined_modified_conservative.tsv: assets/mixs_combined_modified.tsv
+	grep -v "MIXS:0000752" $< | \
+	grep -v "MIXS:0000755" | \
+	grep -v "MIXS:0001230" > $@
 
-assets/mixs_combined_diff_no_752.html: assets/mixs_combined_no_752.tsv assets/mixs_combined_modified_no_752.tsv
+assets/mixs_combined_diff_conservative.html: assets/mixs_combined_conservative.tsv assets/mixs_combined_modified_conservative.tsv
 	script -q -c "csvdiff --separator '\t'  --primary-key 0,3,4 --format word-diff  $^" | aha > $@
 
