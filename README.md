@@ -1,8 +1,13 @@
 # mixs_fresh_start
 
+This prject can save a colored log of the difference between the original combined sheet and any user-provided differences in the modified sheet. It only works on Linux systems at this point.
+
 This project requires the following system dependencies in addition to the Python libraties in pyproject.toml
-- https://github.com/theZiz/aha
-- https://github.com/aswinkarthik/csvdiff
+- https://github.com/aswinkarthik/csvdiff for streaming the colored diff to STDOUT
+- The linux version of https://man7.org/linux/man-pages/man1/script.1.html for saving the colored diff to a "typescript" file
+- https://github.com/theZiz/aha for converting the colored "typescript" file to HTML
+- optionally soemthing like https://github.com/wkhtmltopdf/wkhtmltopdf/blob/master/docs/usage/wkhtmltopdf.txt to convert the HTML output to PDF
+
 
 ## Website
 
