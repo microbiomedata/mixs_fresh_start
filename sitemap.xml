@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://microbiomedata.github.io/mixs_fresh_start/</loc>
-         <lastmod>2023-02-20</lastmod>
+         <lastmod>2023-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microbiomedata.github.io/mixs_fresh_start/Biosample/</loc>
-         <lastmod>2023-02-20</lastmod>
+         <lastmod>2023-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microbiomedata.github.io/mixs_fresh_start/Checklists/</loc>
-         <lastmod>2023-02-20</lastmod>
+         <lastmod>2023-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microbiomedata.github.io/mixs_fresh_start/Extension/</loc>
-         <lastmod>2023-02-20</lastmod>
+         <lastmod>2023-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microbiomedata.github.io/mixs_fresh_start/Package/</loc>
-         <lastmod>2023-02-20</lastmod>
+         <lastmod>2023-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microbiomedata.github.io/mixs_fresh_start/QuantityValue/</loc>
-         <lastmod>2023-02-20</lastmod>
+         <lastmod>2023-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microbiomedata.github.io/mixs_fresh_start/depth/</loc>
-         <lastmod>2023-02-20</lastmod>
+         <lastmod>2023-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microbiomedata.github.io/mixs_fresh_start/has_raw_value/</loc>
-         <lastmod>2023-02-20</lastmod>
+         <lastmod>2023-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microbiomedata.github.io/mixs_fresh_start/mixs_fresh_start/</loc>
-         <lastmod>2023-02-20</lastmod>
+         <lastmod>2023-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microbiomedata.github.io/mixs_fresh_start/types/</loc>
-         <lastmod>2023-02-20</lastmod>
+         <lastmod>2023-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
