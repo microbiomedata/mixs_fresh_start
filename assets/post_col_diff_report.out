@@ -1,3 +1,3 @@
-Intersection: {'Occurrence', 'Item', 'Value syntax', 'Expected value', 'Example', 'Definition', 'MIXS ID', 'Structured comment name', 'Preferred unit'}
+Intersection: {'Value syntax', 'Occurrence', 'Definition', 'Structured comment name', 'Preferred unit', 'Expected value', 'MIXS ID', 'Example', 'Item'}
 Set difference (1 - 2): {'Section'}
 Set difference (2 - 1): {'Environmental package'}

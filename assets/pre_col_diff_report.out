@@ -1,3 +1,3 @@
-Intersection: {'Example', 'Definition', 'Preferred unit', 'Value syntax', 'Structured comment name', 'MIXS ID', 'Expected value'}
-Set difference (1 - 2): {' ', 'mimarks_s', 'mimarks_c', 'mimag', 'migs_ba', 'miuvig', 'Section', 'migs_org', 'migs_eu', 'migs_vi', 'Item (rdfs:label)', 'Occurence', 'misag', 'migs_pl', 'mims'}
-Set difference (2 - 1): {'', 'Occurrence', 'Environmental package', 'Package item', 'Requirement'}
+Intersection: {'Example', 'Definition', 'Structured comment name', 'Preferred unit', 'Expected value', 'MIXS ID', 'Value syntax'}
+Set difference (1 - 2): {'migs_eu', ' ', 'mimarks_c', 'mimag', 'miuvig', 'Section', 'mimarks_s', 'Occurence', 'mims', 'migs_org', 'Item (rdfs:label)', 'migs_ba', 'migs_vi', 'misag', 'migs_pl'}
+Set difference (2 - 1): {'', 'Requirement', 'Occurrence', 'Environmental package', 'Package item'}

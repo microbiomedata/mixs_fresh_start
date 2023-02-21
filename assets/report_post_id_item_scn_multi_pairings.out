@@ -1,0 +1,10 @@
+Item value: soil horizon is paired with multiple values in MIXS ID: {'MIXS:0001082', 'MIXS:0001291'}
+Item value: observed host symbionts is paired with multiple values in MIXS ID: {'MIXS:0001298', 'MIXS:0001309'}
+Item value: host sex is paired with multiple values in MIXS ID: {'MIXS:0000862', 'MIXS:0000811'}
+Item value: host body product is paired with multiple values in MIXS ID: {'MIXS:0000868', 'MIXS:0000888'}
+Structured comment name value: soil_horizon is paired with multiple values in MIXS ID: {'MIXS:0001291', 'MIXS:0001082'}
+Structured comment name value: host_symbiont is paired with multiple values in MIXS ID: {'MIXS:0001298', 'MIXS:0001309'}
+Structured comment name value: host_sex is paired with multiple values in MIXS ID: {'MIXS:0000862', 'MIXS:0000811'}
+Structured comment name value: host_body_product is paired with multiple values in MIXS ID: {'MIXS:0000868', 'MIXS:0000888'}
+Structured comment name value: nose_throat_disord is paired with multiple values in MIXS ID: {'MIXS:0000270', 'MIXS:0000283'}
+Structured comment name value: nose_throat_disord is paired with multiple values in Item: {'lung/nose-throat disorder', 'nose/mouth/teeth/throat disorder'}
