@@ -2,6 +2,8 @@
 
 This project provides support for converting the MIxS standard into LinkML via schemasheets
 
+It provides full automation and better reporting, as an alternative to the more manual curation that was started in https://github.com/GenomicsStandardsConsortium/mixs/tree/issue-511-tested-schemasheets/schemasheets/tsv_in (although it does not address the class definitions or slot-to-class assignments that are aviaoable in that repo yet.)
+
 The current implemntation focuses on aiding curators in distilling global definitions for terms that have (intentional or not) variations in the contest of different environmentla packages.
 
 This prject can save a colored log of the difference between the original combined sheet and any user-provided differences in the modified sheet. **It only works on Linux systems at this point.**
